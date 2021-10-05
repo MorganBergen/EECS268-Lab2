@@ -8,25 +8,36 @@
 
 int main(int argc, const char * argv[]) {
     
+    std::cout << "\nPLEASE NOTE THAT THE INCLUDED HEADER FILES WILL NOT PERMANENTLY STAY WITHIN MAIN, INSTEAD THEY WILL BE INCLUDED IN THE EXECUTIVE CLASS WHERE FILE I/O WILL TAKE PLACE" << std::endl;
+    
     //an array of shape pointers
     Shape** arrayOfShapes = nullptr;
     
-    arrayOfShapes = new Shape*[3];
+    std::cout << "\n\narrayOfShapes is pointing to " << arrayOfShapes << std::endl;
     
-    arrayOfShapes[0] = nullptr;
-    arrayOfShapes[1] = nullptr;
-    arrayOfShapes[2] = nullptr;
+    arrayOfShapes = new Shape*[3];
+    std::cout << "\narrayOfShapes:\n" << "- a pointer to an array of shape pointers\n- or understood to be an array of shape pointers" << std::endl;
     
     for (int i = 0; i < 3; i++) {
-        std::cout << arrayOfShapes[i] << std::endl;
+        arrayOfShapes[i] = nullptr;
     }
-    
+    for (int i = 0; i < 3; i++) {
+        std::cout << "*Shape at index " << i << " is pointing to " << arrayOfShapes[i] << std::endl;
+    }
+    std::cout << "\n" << std::endl;
+    std::cout << "Assigning & Initializing *Shape pointers now..." << std::endl;
     arrayOfShapes[0] = new Circle(10);
+    
     arrayOfShapes[1] = new Rectangle(10, 20);
+    
     arrayOfShapes[2] = new Triangle(10, 20);
     
+    std::cout << "\n\narrayOfShapes -> arrayOfShapes[size] = { *Shape, *Shape, *Shape }\n" << std::endl;
+    
     for (int i = 0; i < 3; i++) {
-        std::cout << arrayOfShapes[i] -> shapeName() << std::endl;
+        std::cout << "arrayOfShapes[" << i << "] -> ";
+        std::cout << arrayOfShapes[i] -> shapeName() << " area of ";
+        std::cout << arrayOfShapes[i] -> area() << std::endl;
     }
     
     return 0;

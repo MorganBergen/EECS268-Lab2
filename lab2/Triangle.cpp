@@ -7,6 +7,7 @@
 Triangle::Triangle(){}
 
 Triangle::Triangle(double base, double height){
+    std::cout << "the triangle constructor has been called" << std::endl;
     m_base = base;
     m_height = height;
 }

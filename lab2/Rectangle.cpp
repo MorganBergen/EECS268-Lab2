@@ -7,6 +7,7 @@
 Rectangle::Rectangle(){}
 
 Rectangle::Rectangle(double width, double height){
+    std::cout << "the rectangle constructor has been called" << std::endl;
     m_width = height;
     m_height = height;
 }
