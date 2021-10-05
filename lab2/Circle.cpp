@@ -9,6 +9,7 @@ Circle::Circle(){}
 Circle::Circle(double radius){
     std::cout << "the circle constructor has been called" << std::endl;
     m_radius = radius;
+    std::cout << "radius has been set to " << m_radius << std::endl;
 }
 
 void Circle::setRadius(double radius){

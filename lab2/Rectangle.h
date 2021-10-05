@@ -9,14 +9,14 @@
 class Rectangle : public Shape {
 private:
     double m_width;
-    double m_height;
+    double m_length;
     
 public:
     Rectangle();
-    Rectangle(double width, double height);
+    Rectangle(double width, double length);
    
     void setWidth(double width);
-    void setHeight(double height);
+    void setlength(double length);
     
     virtual double area() const;
     virtual std::string shapeName() const;
