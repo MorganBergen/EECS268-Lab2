@@ -1,7 +1,9 @@
 # EECS268-Lab2
 EECS 268 Programming II at The University of Kansas
 
-This lab is intended to demonstrate knowledge from the following concepts,
+Lab2 Shape Interface
+
+The purpose of this lab is to exihibit and demonstrate knowledge from the following concepts,
 
 Overview of Concepts:
 - pointers & dynamic arrays
