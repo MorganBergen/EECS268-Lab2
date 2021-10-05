@@ -5,7 +5,6 @@
 #include <string>
 
 Circle::Circle(){
-    std::cout << "CALLED    Circle::Circle()" << std::endl;
 }
 
 Circle::Circle(double radius){
@@ -19,12 +18,10 @@ double Circle::area() const {
 }
 
 std::string Circle::shapeName() const {
-    
     return("Circle");
 }
 
 void Circle::setRadius(double radius){
     m_radius = radius;
-    std::cout << "CALLED    void Circle::setRadius(double radius)" << std::endl;
 }
 
