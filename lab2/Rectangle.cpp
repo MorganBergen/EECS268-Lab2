@@ -4,7 +4,9 @@
 #include <iostream>
 #include <string>
 
-Rectangle::Rectangle(){}
+Rectangle::Rectangle(){
+    std::cout << "the rectangle default constructor has been called" << std::endl;
+}
 
 Rectangle::Rectangle(double width, double length){
     std::cout << "the rectangle constructor has been called" << std::endl;
@@ -15,6 +17,7 @@ Rectangle::Rectangle(double width, double length){
 }
 
 void Rectangle::setWidth(double width){
+    std::cout << "the rectangle setWidth method has been called" << std::endl;
     m_width = width;
 }
 
