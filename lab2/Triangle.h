@@ -14,11 +14,13 @@ private:
 public:
     Triangle();
     Triangle(double base, double height);
-    ~Triangle();
-    double area() const;
+    
     void setBase(double base);
     void setHeight(double height);
-    std::string shapeName() const;
+    
+    virtual double area() const;
+    virtual std::string shapeName() const;
+    virtual ~Triangle();
     
 };
 

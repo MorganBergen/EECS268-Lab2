@@ -68,12 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				EBE40F6D270BE83400D59D60 /* main.cpp */,
+				EBE40F77270BEBB600D59D60 /* Shape.h */,
 				EBE40F74270BEA7100D59D60 /* Circle.cpp */,
 				EB33E06F270C026500AEE5C4 /* Rectangle.cpp */,
-				EB33E070270C026500AEE5C4 /* Rectangle.h */,
-				EBE40F77270BEBB600D59D60 /* Shape.h */,
-				EBE40F75270BEA7100D59D60 /* Circle.h */,
 				EB33E072270C0D8100AEE5C4 /* Triangle.cpp */,
+				EBE40F75270BEA7100D59D60 /* Circle.h */,
+				EB33E070270C026500AEE5C4 /* Rectangle.h */,
 				EB33E073270C0D8100AEE5C4 /* Triangle.h */,
 			);
 			path = lab2;

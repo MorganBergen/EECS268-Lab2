@@ -4,18 +4,11 @@
 #include <iostream>
 #include <string>
 
-Rectangle::Rectangle(){
-}
+Rectangle::Rectangle(){}
 
 Rectangle::Rectangle(double width, double height){
     m_width = height;
     m_height = height;
-}
-
-Rectangle::~Rectangle(){}
-
-double Rectangle::area() const {
-    return(m_width*m_height);
 }
 
 void Rectangle::setWidth(double width){
@@ -26,6 +19,12 @@ void Rectangle::setHeight(double height){
     m_height = height;
 }
 
+double Rectangle::area() const {
+    return(m_width*m_height);
+}
+
 std::string Rectangle::shapeName() const {
     return ("Rectangle");
 }
+
+Rectangle::~Rectangle(){}

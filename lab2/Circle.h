@@ -14,10 +14,12 @@ private:
 public:
     Circle();
     Circle(double radius);
-    ~Circle();
-    double area() const;
+    
     void setRadius(double radius);
-    std::string shapeName() const;
+    
+    virtual double area() const;
+    virtual std::string shapeName() const;
+    virtual ~Circle();
     
 };
 
