@@ -16,7 +16,7 @@ public:
     double area(int index) const;
     std::string shapeName(int index) const;
     
-    void add(Shape* shapePtr, int index) const;
+    void add(Shape* shapePtr, int index);
     void remove(int index);
     
 private:

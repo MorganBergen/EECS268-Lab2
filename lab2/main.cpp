@@ -20,6 +20,7 @@ int main(int argc, const char * argv[]) {
     
     Circle* tempCir = new Circle;
     tempCir -> setRadius(radius);
+    
     Rectangle* tempRec = new Rectangle;
     tempRec -> setWidth(width);
     tempRec -> setlength(length);
@@ -27,7 +28,11 @@ int main(int argc, const char * argv[]) {
     container -> add(tempCir, 0);
     container -> add(tempRec, 1);
     container -> remove(1);
+
     
+    std::cout << "Shape at index " << 0 << ": " << container -> shapeName(0) << " area = " << container -> area(0) << std::endl;
+
+    container -> ~ShapeContainer();
     
     return(0);
 }
