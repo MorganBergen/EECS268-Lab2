@@ -10,6 +10,8 @@
 		EB1659C4270D487200B1C911 /* ShapeContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1659C2270D487200B1C911 /* ShapeContainer.cpp */; };
 		EB33E071270C026500AEE5C4 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB33E06F270C026500AEE5C4 /* Rectangle.cpp */; };
 		EB33E074270C0D8100AEE5C4 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB33E072270C0D8100AEE5C4 /* Triangle.cpp */; };
+		EB58A082270D6BAA00023136 /* Executive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB58A080270D6BAA00023136 /* Executive.cpp */; };
+		EB58A084270D6DF700023136 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = EB58A083270D6DF700023136 /* makefile */; };
 		EBE40F6E270BE83400D59D60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE40F6D270BE83400D59D60 /* main.cpp */; };
 		EBE40F76270BEA7100D59D60 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE40F74270BEA7100D59D60 /* Circle.cpp */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,9 @@
 		EB33E072270C0D8100AEE5C4 /* Triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
 		EB33E073270C0D8100AEE5C4 /* Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
 		EB3E6A7F270CEE460024E0F9 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		EB58A080270D6BAA00023136 /* Executive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Executive.cpp; sourceTree = "<group>"; };
+		EB58A081270D6BAA00023136 /* Executive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Executive.h; sourceTree = "<group>"; };
+		EB58A083270D6DF700023136 /* makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		EBE40F6A270BE83400D59D60 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab2; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE40F6D270BE83400D59D60 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EBE40F74270BEA7100D59D60 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
@@ -72,16 +77,19 @@
 			isa = PBXGroup;
 			children = (
 				EBE40F6D270BE83400D59D60 /* main.cpp */,
-				EB1659C2270D487200B1C911 /* ShapeContainer.cpp */,
+				EB58A083270D6DF700023136 /* makefile */,
+				EB58A081270D6BAA00023136 /* Executive.h */,
 				EB1659C3270D487200B1C911 /* ShapeContainer.h */,
-				EB3E6A7F270CEE460024E0F9 /* input.txt */,
 				EBE40F77270BEBB600D59D60 /* Shape.h */,
-				EBE40F74270BEA7100D59D60 /* Circle.cpp */,
-				EB33E06F270C026500AEE5C4 /* Rectangle.cpp */,
-				EB33E072270C0D8100AEE5C4 /* Triangle.cpp */,
 				EBE40F75270BEA7100D59D60 /* Circle.h */,
 				EB33E070270C026500AEE5C4 /* Rectangle.h */,
 				EB33E073270C0D8100AEE5C4 /* Triangle.h */,
+				EB58A080270D6BAA00023136 /* Executive.cpp */,
+				EB1659C2270D487200B1C911 /* ShapeContainer.cpp */,
+				EBE40F74270BEA7100D59D60 /* Circle.cpp */,
+				EB33E06F270C026500AEE5C4 /* Rectangle.cpp */,
+				EB33E072270C0D8100AEE5C4 /* Triangle.cpp */,
+				EB3E6A7F270CEE460024E0F9 /* input.txt */,
 			);
 			path = lab2;
 			sourceTree = "<group>";
@@ -143,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB58A082270D6BAA00023136 /* Executive.cpp in Sources */,
+				EB58A084270D6DF700023136 /* makefile in Sources */,
 				EBE40F6E270BE83400D59D60 /* main.cpp in Sources */,
 				EB1659C4270D487200B1C911 /* ShapeContainer.cpp in Sources */,
 				EBE40F76270BEA7100D59D60 /* Circle.cpp in Sources */,

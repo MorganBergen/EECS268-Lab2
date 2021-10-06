@@ -6,33 +6,16 @@
 #include "Rectangle.h"
 #include "Triangle.h"
 #include "ShapeContainer.h"
+#include "Executive.h"
 
 
 int main(int argc, const char * argv[]) {
     
-    int size = 3;
-    int radius = 1;
-    int width = 2;
-    int length = 2;
-    
-    ShapeContainer* container = nullptr;
-    container = new ShapeContainer(size);
-    
-    Circle* tempCir = new Circle;
-    tempCir -> setRadius(radius);
-    
-    Rectangle* tempRec = new Rectangle;
-    tempRec -> setWidth(width);
-    tempRec -> setlength(length);
-    
-    container -> add(tempCir, 0);
-    container -> add(tempRec, 1);
-    container -> remove(1);
-
-    
-    std::cout << "Shape at index " << 0 << ": " << container -> shapeName(0) << " area = " << container -> area(0) << std::endl;
-
-    container -> ~ShapeContainer();
+    if (argc < 2) {
+        std::cerr << "incorrect number of parameters" << std::endl;
+    } else {
+        Executive exec(argv[0]);
+    }
     
     return(0);
 }
