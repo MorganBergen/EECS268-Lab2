@@ -26,8 +26,8 @@ int main(int argc, const char * argv[]) {
     
     container -> add(tempCir, 0);
     container -> add(tempRec, 1);
+    container -> remove(1);
     
-
     
     return(0);
 }

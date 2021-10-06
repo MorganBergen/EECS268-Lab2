@@ -22,9 +22,13 @@ ShapeContainer::~ShapeContainer(){
     }
 }
 
+
+
+
+
+
 void ShapeContainer::add(Shape* shapePtr, int index) const{
     if (index < 0 || index > m_size - 1) {
-        std::cout << "cannot";
         throw std::runtime_error("Cannot add object because index is out of range.");
     } else if (m_array_of_shapes[index] == nullptr) {
         std::cout << shapePtr -> shapeName() << " has been stored in m_array_of_shapes at index " << index << std::endl;
@@ -35,3 +39,16 @@ void ShapeContainer::add(Shape* shapePtr, int index) const{
     }
 }
 
+//removes object that m_arrayOfShapes points to,
+//then assigns index to nullptr,
+//or throws a std::runtime_error if the index is invalid or there is no object to delete
+void ShapeContainer::remove(int index){
+    if (index < 0 || index > m_size - 1) {
+        throw std::runtime_error("Cannot remove object because index is out of range.");
+    } else {
+        std::cout << m_array_of_shapes[index] -> shapeName() << " is now being set to... ";
+        delete m_array_of_shapes[index];
+        m_array_of_shapes[index] = nullptr;
+        std::cout << m_array_of_shapes[index] << std::endl;
+    }
+}
