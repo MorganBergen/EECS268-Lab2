@@ -1,5 +1,5 @@
 a: main.o Circle.o Rectangle.o Triangle.o Executive.o ShapeContainer.o
-	g++ -std=c++11 -g -Wall main.o Circle.o Rectangle.o Triangle.o Executive.o ShapeContainer.o
+	g++ -std=c++11 -g -Wall main.o Circle.o Rectangle.o Triangle.o Executive.o ShapeContainer.o -o a
 
 main.o: Executive.h main.cpp
 	g++ -std=c++11 -g -Wall -c main.cpp
@@ -21,3 +21,4 @@ Executive.o: Executive.h Circle.h Rectangle.h Triangle.h ShapeContainer.h Execut
 	
 clean:
 	rm *.o a
+

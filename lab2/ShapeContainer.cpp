@@ -47,15 +47,15 @@ std::string ShapeContainer::shapeName(int index) const {
     }
 }
 
-void ShapeContainer::add(Shape* shapePtr, int index) {
+void ShapeContainer::add(Shape* shape_ptr, int index) {
     
     if (index < 0 || index > m_size - 1) {
         throw std::runtime_error("Cannot add object because index is out of range.");
     } else if (m_array_of_shapes[index] == nullptr) {
-        m_array_of_shapes[index] = shapePtr;
+        m_array_of_shapes[index] = shape_ptr;
     } else {
         delete m_array_of_shapes[index];
-        m_array_of_shapes[index] = shapePtr;
+        m_array_of_shapes[index] = shape_ptr;
     }
 }
 

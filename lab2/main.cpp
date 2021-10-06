@@ -14,7 +14,8 @@ int main(int argc, const char * argv[]) {
     if (argc < 2) {
         std::cerr << "incorrect number of parameters" << std::endl;
     } else {
-        Executive exec(argv[0]);
+        std::cout << argv[1] << std::endl;
+        Executive exec(argv[1]);
     }
     
     return(0);
