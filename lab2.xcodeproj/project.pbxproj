@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1659C4270D487200B1C911 /* ShapeContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1659C2270D487200B1C911 /* ShapeContainer.cpp */; };
 		EB33E071270C026500AEE5C4 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB33E06F270C026500AEE5C4 /* Rectangle.cpp */; };
 		EB33E074270C0D8100AEE5C4 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB33E072270C0D8100AEE5C4 /* Triangle.cpp */; };
 		EBE40F6E270BE83400D59D60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE40F6D270BE83400D59D60 /* main.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB1659C2270D487200B1C911 /* ShapeContainer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeContainer.cpp; sourceTree = "<group>"; };
+		EB1659C3270D487200B1C911 /* ShapeContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeContainer.h; sourceTree = "<group>"; };
 		EB33E06F270C026500AEE5C4 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		EB33E070270C026500AEE5C4 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 		EB33E072270C0D8100AEE5C4 /* Triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				EBE40F6D270BE83400D59D60 /* main.cpp */,
+				EB1659C2270D487200B1C911 /* ShapeContainer.cpp */,
+				EB1659C3270D487200B1C911 /* ShapeContainer.h */,
 				EB3E6A7F270CEE460024E0F9 /* input.txt */,
 				EBE40F77270BEBB600D59D60 /* Shape.h */,
 				EBE40F74270BEA7100D59D60 /* Circle.cpp */,
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE40F6E270BE83400D59D60 /* main.cpp in Sources */,
+				EB1659C4270D487200B1C911 /* ShapeContainer.cpp in Sources */,
 				EBE40F76270BEA7100D59D60 /* Circle.cpp in Sources */,
 				EB33E071270C026500AEE5C4 /* Rectangle.cpp in Sources */,
 				EB33E074270C0D8100AEE5C4 /* Triangle.cpp in Sources */,
