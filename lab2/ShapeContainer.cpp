@@ -67,27 +67,15 @@ void ShapeContainer::add(Shape* shape_ptr, int index) {
     }
 }
 
-//ORIGINAL REMOVE METHOD
-//void ShapeContainer::remove(int index){
-//
-//    if (index < 0 || index > m_size - 1) {
-//        throw std::runtime_error("Cannot be deleted object because index is out of range.");
-//    } else if (m_array_of_shapes[index] == nullptr) {
-//        throw std::runtime_error("Cannot be deleted because there is no object to delete.");
-//    } else {
-//        delete m_array_of_shapes[index];
-//        m_array_of_shapes[index] = nullptr;
-//
-//    }
-//}
 
-//REVISED METHOD DONE AT 2021.10.07 AT 11:35AM
 void ShapeContainer::remove(int index){
-    
-    if (index > m_size || m_array_of_shapes[index] == nullptr) {
-        throw (std::runtime_error("Cannot be deleted because the object does not exit."));
+
+    if (index < 0 || index > m_size - 1) {
+        throw std::runtime_error("Cannot be deleted object because index is out of range.");
+    } else if (m_array_of_shapes[index] == nullptr) {
+        throw std::runtime_error("Cannot be deleted because there is no object to delete.");
     } else {
-        (delete m_array_of_shapes[index]);
+        delete m_array_of_shapes[index];
+        m_array_of_shapes[index] = nullptr;
     }
-    
 }
