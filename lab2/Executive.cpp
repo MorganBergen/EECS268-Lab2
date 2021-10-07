@@ -40,20 +40,21 @@ void Executive::run() {
             
         } else if (m_instruction == "DELETE") {
             
-            std::cout << m_instruction << std::endl;
+            deleteObject();
             
         } else if (m_instruction == "EXIT") {
             
             in_file.close();
             
             std::cout << "Exiting..." << std::endl;
+            deleteObject();
             
             return;
             
         } else {
             
             std::cout << "invalid option" << std::endl;
-            
+            deleteObject();
             return;
         }
     }
@@ -125,20 +126,6 @@ void Executive::addToContainer(){
         
     }
 }
-
-
-/*
- PRINT <index>
- Prints the name and area of the shape at a given index, as shown below
- The index may be out of range or not yet set, in which case you must catch and handle the exception to gracefully recover and continue on
- 
- Shape at index 0: Circle area = 95.0331
- Shape at index 99: Does not exist
- Shape at index 2: Rectangle area = 212.625
- Exiting...
- 
- 
- */
 
 void Executive::print() const {
     

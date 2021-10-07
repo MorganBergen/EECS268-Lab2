@@ -1,6 +1,7 @@
 //  main.cpp
 
 #include <iostream>
+#include <stdlib.h>
 #include "Shape.h"
 #include "Circle.h"
 #include "Rectangle.h"
