@@ -4,18 +4,13 @@
 #include <iostream>
 #include <string>
 
-Circle::Circle(){
-//    std::cout << "\ncircle default constructor has been called" << std::endl;
-}
+Circle::Circle(){}
 
 Circle::Circle(double radius){
-//    std::cout << "\ncircle constructor has been called and the radius has been set to ";
     m_radius = radius;
-//    std::cout << m_radius << std::endl;
 }
 
 void Circle::setRadius(double radius){
-//    std::cout << "\ncircle setRadius method has been called" << std::endl;
     m_radius = radius;
 }
 

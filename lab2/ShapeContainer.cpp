@@ -9,8 +9,6 @@ ShapeContainer::ShapeContainer(int size){
     m_size = size;
     
     m_array_of_shapes = new Shape*[m_size];
-//    std::cout << "\nshapeconatiner constructor has been called" << std::endl;
-//    std::cout << "\nm_array_of_shapes is now an array that holds " << m_size << " shape pointers" << std::endl;
     for (int i = 0; i < m_size; i++) {
         m_array_of_shapes[i] = nullptr;
     }
@@ -53,25 +51,21 @@ void ShapeContainer::add(Shape* shape_ptr, int index) {
     if (index < 0 || index > m_size - 1) {
         throw std::runtime_error("Cannot add object because index is out of range.");
     } else if (m_array_of_shapes[index] == nullptr) {
-        std::cout << "the shape object has been allocated into m_array_of_shapes at index " << index << std::endl;
         m_array_of_shapes[index] = shape_ptr;
     } else {
         delete m_array_of_shapes[index];
         m_array_of_shapes[index] = shape_ptr;
-        std::cout << "the shape object has been allocated into m_array_of_shapes at index " << index << std::endl;
     }
 }
 
 void ShapeContainer::remove(int index){
     
     if (index < 0 || index > m_size - 1) {
-        throw std::runtime_error("Cannot remove object because index is out of range.");
+        throw std::runtime_error("Cannot be deleted object because index is out of range.");
     } else if (m_array_of_shapes[index] == nullptr) {
-        throw std::runtime_error("Cannot remove object because there is no object to delete.");
+        throw std::runtime_error("Cannot be deleted because there is no object to delete.");
     } else {
-        std::cout << m_array_of_shapes[index] -> shapeName() << " is now being removed to be.... ";
         delete m_array_of_shapes[index];
         m_array_of_shapes[index] = nullptr;
-        std::cout << m_array_of_shapes[index] << std::endl;
     }
 }

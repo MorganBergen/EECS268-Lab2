@@ -29,23 +29,3 @@ private:
 };
 
 #endif /* Executive_h */
-
-
-/*
-
- Executive(std::string file_name)
- - declares executive object
- - opens file
- - reads in size
- - creates container object
-
- ~Executive();
- - deletes what m_container pointer is pointing to
- 
- void run();
- - reads in the file operation and index to perform on
- - refers to add, print, and deleteObject as necessary
- 
- */
-
-

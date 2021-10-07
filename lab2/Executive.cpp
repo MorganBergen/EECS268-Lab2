@@ -18,7 +18,6 @@ Executive::Executive(std::string file_name) {
     if (in_file.is_open()) {
         
         in_file >> m_file_size;
-        //        std::cout << "\nexecutive constructor has been called, m_file_size == " << m_file_size << std::endl;
     }
     
     m_container = new ShapeContainer(m_file_size);
@@ -28,8 +27,6 @@ Executive::Executive(std::string file_name) {
 void Executive::run() {
     
     while (!in_file.eof()) {
-        
-        //        std::cout << "\nexecutive run method has been called" << std::endl;
         
         in_file >> m_instruction >> m_index;
         
@@ -47,17 +44,14 @@ void Executive::run() {
             
         } else if (m_instruction == "EXIT") {
             
-            std::cout << m_instruction  << std::endl;
-            
             in_file.close();
             
-            std::cout << "\n\Exiting..." << std::endl;
+            std::cout << "Exiting..." << std::endl;
             
             return;
             
         } else {
             
-            //            std::cout << "INCOMPLETE" << std::endl;
             std::cout << "invalid option" << std::endl;
             
             return;
@@ -67,14 +61,6 @@ void Executive::run() {
 }
 
 
-
-/*
- ADD <index> <shape code> <shape data>
- <index> is the index in the container to put the shape
- <shape code> will be CIR, TRI, or REC for Circle, Triangle, and Rectangle respectively
- <shape data> will the be radius, base and height, or length and width, of a Circle, Triangle, or Rectangle respectively
- */
-
 void Executive::addToContainer(){
     
     in_file >> m_name_of_object;
@@ -82,9 +68,6 @@ void Executive::addToContainer(){
     if (m_name_of_object == "CIR") {
         
         in_file >> m_radius;
-        
-        //        std::cout << "\nthe following line has been read in.... \n" << std::endl;
-        //        std::cout << m_instruction << " " << m_index << " " << m_name_of_object << " " << m_radius << std::endl;
         
         Circle* tempCir = new Circle;
         
@@ -105,9 +88,6 @@ void Executive::addToContainer(){
         
         in_file >> m_base >> m_height;
         
-        //        std::cout << "\nthe following line has been read in.... \n" << std::endl;
-        //        std::cout << m_instruction << " " << m_index << " " << m_name_of_object << " " << m_base << " " << m_height << std::endl;
-        
         Triangle* tempTri = new Triangle;
         
         tempTri -> setBase(m_base);
@@ -124,9 +104,6 @@ void Executive::addToContainer(){
     } else if (m_name_of_object == "REC") {
         
         in_file >> m_width >> m_length;
-        
-        //        std::cout << "\nthe following line has been read in.... \n" << std::endl;
-        //        std::cout << m_instruction << " " << m_index << " " << m_name_of_object << " " << m_width << " " << m_length << std::endl;
         
         Rectangle* tempRec = new Rectangle;
         
@@ -179,6 +156,20 @@ void Executive::print() const {
     }
 }
 
+
+void Executive::deleteObject() {
+    
+    if (m_index < 0 || m_index > m_file_size - 1) {
+        try {
+            m_container -> remove(m_index);
+        } catch (std::runtime_error& e) {
+            std::cout << "Shape at index " << m_index << ": " << e.what() << std::endl;
+        }
+    } else {
+        m_container -> remove(m_index);
+    }
+    
+}
 
 Executive::~Executive() {
     
