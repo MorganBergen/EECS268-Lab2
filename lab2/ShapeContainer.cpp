@@ -14,19 +14,6 @@ ShapeContainer::ShapeContainer(int size){
     }
 }
 
-//ORIGINAL DESTRUCTOR
-//ShapeContainer::~ShapeContainer(){
-//
-//    for (int i = 0; i < m_size; i++) {
-//        if (m_array_of_shapes[i] != nullptr) {
-//            delete m_array_of_shapes[i];
-//        } else {
-//
-//        }
-//    }
-//}
-
-//REVISED DESTRUCTOR DONE AT 2021.10.07 AT 11:32AM
 ShapeContainer::~ShapeContainer() {
     for (int i = 0; i < m_size; i++) {
         delete m_array_of_shapes[i];
