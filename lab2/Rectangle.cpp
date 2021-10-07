@@ -5,15 +5,15 @@
 #include <string>
 
 Rectangle::Rectangle(){
-    std::cout << "the rectangle default constructor has been called" << std::endl;
+//    std::cout << "the rectangle default constructor has been called" << std::endl;
 }
 
 Rectangle::Rectangle(double width, double length){
-    std::cout << "the rectangle constructor has been called" << std::endl;
+//    std::cout << "the rectangle constructor has been called" << std::endl;
     m_width = width;
     m_length = length;
-    std::cout << "width has been set to " << m_width << std::endl;
-    std::cout << "length has been set to " << m_length << std::endl;
+//    std::cout << "width has been set to " << m_width << std::endl;
+//    std::cout << "length has been set to " << m_length << std::endl;
 }
 
 void Rectangle::setWidth(double width){

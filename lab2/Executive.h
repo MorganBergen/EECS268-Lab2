@@ -23,7 +23,7 @@ private:
     std::string m_name_of_object;
     double m_radius, m_length, m_width, m_height, m_base;
     
-    void execAdd();
+    void addToContainer();
     void print() const;
     void deleteObject();
 };
@@ -38,5 +38,14 @@ private:
  - opens file
  - reads in size
  - creates container object
+
+ ~Executive();
+ - deletes what m_container pointer is pointing to
+ 
+ void run();
+ - reads in the file operation and index to perform on
+ - refers to add, print, and deleteObject as necessary
  
  */
+
+

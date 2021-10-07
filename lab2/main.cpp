@@ -14,18 +14,23 @@ int main(int argc, const char * argv[]) {
     if (argc < 2) {
         std::cerr << "incorrect number of parameters" << std::endl;
     } else {
-        std::cout << argv[1] << std::endl;
         Executive exec(argv[1]);
+        exec.run();
+        
     }
     
     return(0);
 }
 
 
-/*Shape at index 0: Circle area = 95.0331
+/*
+ 
+ Shape at index 0: Circle area = 95.0331
  Shape at index 99: Does not exist
  Shape at index 2: Rectangle area = 212.625
- Exiting...*/
+ Exiting...
+ 
+ */
 
 
 

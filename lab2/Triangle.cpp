@@ -7,18 +7,18 @@
 Triangle::Triangle(){}
 
 Triangle::Triangle(double base, double height){
-    std::cout << "the triangle constructor has been called" << std::endl;
+    std::cout << "triangle constructor has been called" << std::endl;
     m_base = base;
     m_height = height;
-    std::cout << "base has been set to " << m_base << std::endl;
-    std::cout << "height has been set to " << m_height << std::endl;
 }
 
 void Triangle::setBase(double base){
+    std::cout << "triangle setBase method has been called" << std::endl;
     m_base = base;
 }
 
 void Triangle::setHeight(double height){
+    std::cout << "triangle setHeight method has been called" << std::endl;
     m_height = height;
 }
 
