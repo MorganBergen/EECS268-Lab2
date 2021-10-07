@@ -65,7 +65,9 @@ void ShapeContainer::remove(int index){
     } else if (m_array_of_shapes[index] == nullptr) {
         throw std::runtime_error("Cannot be deleted because there is no object to delete.");
     } else {
-        delete m_array_of_shapes[index];
-        m_array_of_shapes[index] = nullptr;
+//        delete m_array_of_shapes[index];
+//        m_array_of_shapes[index] = nullptr;
+        delete [] m_array_of_shapes;
+        
     }
 }

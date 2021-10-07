@@ -1,12 +1,6 @@
 //  main.cpp
 
 #include <iostream>
-#include <stdlib.h>
-#include "Shape.h"
-#include "Circle.h"
-#include "Rectangle.h"
-#include "Triangle.h"
-#include "ShapeContainer.h"
 #include "Executive.h"
 
 

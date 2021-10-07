@@ -47,6 +47,7 @@ void Executive::run() {
             in_file.close();
             
             std::cout << "Exiting..." << std::endl;
+            
             deleteObject();
             
             return;
@@ -54,7 +55,9 @@ void Executive::run() {
         } else {
             
             std::cout << "invalid option" << std::endl;
+            
             deleteObject();
+            
             return;
         }
     }
@@ -122,7 +125,7 @@ void Executive::addToContainer(){
         
     } else {
         
-        std::cout << "INCOMPLETE" << std::endl;
+        std::cout << "Command not found" << std::endl;
         
     }
 }
@@ -154,6 +157,7 @@ void Executive::deleteObject() {
         }
     } else {
         m_container -> remove(m_index);
+        delete m_container;
     }
     
 }
