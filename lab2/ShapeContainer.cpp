@@ -14,15 +14,24 @@ ShapeContainer::ShapeContainer(int size){
     }
 }
 
-ShapeContainer::~ShapeContainer(){
-    
+//ORIGINAL DESTRUCTOR
+//ShapeContainer::~ShapeContainer(){
+//
+//    for (int i = 0; i < m_size; i++) {
+//        if (m_array_of_shapes[i] != nullptr) {
+//            delete m_array_of_shapes[i];
+//        } else {
+//
+//        }
+//    }
+//}
+
+//REVISED DESTRUCTOR DONE AT 2021.10.07 AT 11:32AM
+ShapeContainer::~ShapeContainer() {
     for (int i = 0; i < m_size; i++) {
-        if (m_array_of_shapes[i] != nullptr) {
-            delete m_array_of_shapes[i];
-        } else {
-            
-        }
+        delete m_array_of_shapes[i];
     }
+    delete [] m_array_of_shapes;
 }
 
 double ShapeContainer::area(int index) const {
@@ -58,16 +67,27 @@ void ShapeContainer::add(Shape* shape_ptr, int index) {
     }
 }
 
-void ShapeContainer::remove(int index){
-    
-    if (index < 0 || index > m_size - 1) {
-        throw std::runtime_error("Cannot be deleted object because index is out of range.");
-    } else if (m_array_of_shapes[index] == nullptr) {
-        throw std::runtime_error("Cannot be deleted because there is no object to delete.");
-    } else {
+//ORIGINAL REMOVE METHOD
+//void ShapeContainer::remove(int index){
+//
+//    if (index < 0 || index > m_size - 1) {
+//        throw std::runtime_error("Cannot be deleted object because index is out of range.");
+//    } else if (m_array_of_shapes[index] == nullptr) {
+//        throw std::runtime_error("Cannot be deleted because there is no object to delete.");
+//    } else {
 //        delete m_array_of_shapes[index];
 //        m_array_of_shapes[index] = nullptr;
-        delete [] m_array_of_shapes;
-        
+//
+//    }
+//}
+
+//REVISED METHOD DONE AT 2021.10.07 AT 11:35AM
+void ShapeContainer::remove(int index){
+    
+    if (index > m_size || m_array_of_shapes[index] == nullptr) {
+        throw (std::runtime_error("Cannot be deleted because the object does not exit."));
+    } else {
+        (delete m_array_of_shapes[index]);
     }
+    
 }

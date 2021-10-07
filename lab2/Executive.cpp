@@ -157,7 +157,6 @@ void Executive::deleteObject() {
         }
     } else {
         m_container -> remove(m_index);
-        delete m_container;
     }
     
 }
