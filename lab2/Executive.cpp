@@ -1,4 +1,13 @@
-//  Executive.cpp
+/**
+ * @file        Executive.h
+ * @author      Morgan Bergen
+ * @date        October 08/2021
+ * @brief       This file allows for the overarching functionality of the program.
+ *              There are the add, print, and deleteObject functionalities of the
+ *              program and there are the member variables that will be used to
+ *              read in from the file, to then declare objects and set their
+ *              member variables as necessary as we perform operations.
+ */
 
 #include "Executive.h"
 #include "Circle.h"
@@ -37,7 +46,6 @@ void Executive::run() {
         } else if (m_instruction == "PRINT") {
             
             print();
-            
         } else if (m_instruction == "DELETE") {
             
             deleteObject();

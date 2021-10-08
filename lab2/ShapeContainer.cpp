@@ -1,4 +1,9 @@
-//  ShapeContainer.cpp
+/**
+ * @file        ShapeContainer.h
+ * @author      Morgan Bergen
+ * @date        October 08/2021
+ * @brief       This file contains all of the method memeber implementations of the ShapeConatiner class.
+ */
 
 #include "ShapeContainer.h"
 #include <iostream>
@@ -56,7 +61,7 @@ void ShapeContainer::add(Shape* shape_ptr, int index) {
 
 
 void ShapeContainer::remove(int index){
-
+    
     if (index < 0 || index > m_size - 1) {
         throw std::runtime_error("Cannot be deleted object because index is out of range.");
     } else if (m_array_of_shapes[index] == nullptr) {

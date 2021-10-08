@@ -1,4 +1,9 @@
-//  Rectangle.cpp
+/**
+ * @file        Rectangle.h
+ * @author      Morgan Bergen
+ * @date        October 08/2021
+ * @brief       This file is the implementation file of the Rectangle class methods
+ */
 
 #include "Rectangle.h"
 #include <iostream>

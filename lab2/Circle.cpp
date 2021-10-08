@@ -1,4 +1,10 @@
-// Circle.cpp
+/**
+ * @file        Circle.cpp
+ * @author      Morgan Bergen
+ * @date        October 08/2021
+ * @brief       This file is the implementation file of the Circle class methods
+ *
+ */
 
 #include "Circle.h"
 #include <iostream>
