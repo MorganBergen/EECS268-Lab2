@@ -2,6 +2,7 @@
 EECS 268 Programming II at The University of Kansas
 
 Lab 2 Shape Interface:
+
 The purpose of this program is to demonstrate knowledge from the following concepts,
 
 Overview of Concepts:
