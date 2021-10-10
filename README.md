@@ -1,9 +1,7 @@
 # EECS268-Lab2
-
-Lab2 Shape Interface
-
 EECS 268 Programming II at The University of Kansas
 
+Lab 2 Shape Interface:
 The purpose of this program is to demonstrate knowledge from the following concepts,
 
 Overview of Concepts:
@@ -20,7 +18,6 @@ Overview of Concepts:
 
 
 Overview of Assignment Instructions:
-
 You will use the following Shape interface to implement a Circle, Triangle, and Rectangle classes. Among the method(s) required by the interface...
 - Circles have a radius
 - Triangle have a base and height
