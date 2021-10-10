@@ -1,10 +1,12 @@
 # EECS268-Lab2
 EECS 268 Programming II at The University of Kansas
 
-Lab 2 Shape Interface:
+Lab 2 Shape Interface
+=
 The purpose of this program is to demonstrate knowledge from the following concepts,
 
-Overview of Concepts:
+Overview of Concepts
+=
 - pointers & dynamic arrays
 - file i/o
 - arrays and classes
@@ -17,7 +19,8 @@ Overview of Concepts:
 - overriding pure virtual functions
 
 
-Overview of Assignment Instructions:
+Overview of Assignment Instructions
+=
 You will use the following Shape interface to implement a Circle, Triangle, and Rectangle classes. Among the method(s) required by the interface...
 - Circles have a radius
 - Triangle have a base and height
