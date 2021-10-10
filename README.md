@@ -18,7 +18,8 @@ Overview of Concepts:
 - overriding pure virtual functions
 
 
-Overview of Assignment Instructions:
+Overview of Assignment:
+
 You will use the following Shape interface to implement a Circle, Triangle, and Rectangle classes. Among the method(s) required by the interface...
 - Circles have a radius
 - Triangle have a base and height
